@@ -1,0 +1,20 @@
+query PostById($id: ID!) {
+  post(id: $id) {
+    title
+    slug
+    content
+
+    admin_user {
+      id
+      username
+      firstname
+      lastname
+    }
+    categories {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}

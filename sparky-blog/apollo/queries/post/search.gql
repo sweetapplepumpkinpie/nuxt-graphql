@@ -1,0 +1,20 @@
+query searchPost($text: String!) {
+  posts(where: { title_contains: $text }) {
+    title
+    slug
+    content
+
+    admin_user {
+      id
+      username
+      firstname
+      lastname
+    }
+    categories {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}

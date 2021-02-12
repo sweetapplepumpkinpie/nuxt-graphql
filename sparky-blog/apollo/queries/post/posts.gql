@@ -1,0 +1,21 @@
+# Write your query or mutation here
+query Posts {
+  posts {
+    title
+    slug
+    content
+
+    admin_user {
+      id
+      username
+      firstname
+      lastname
+    }
+    categories {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+  }
+}
