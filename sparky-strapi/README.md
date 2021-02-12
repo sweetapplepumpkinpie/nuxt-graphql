@@ -1,3 +1,3 @@
-# Strapi application
+# Sparky Strapi 
 
-A quick description of your strapi application
+Strapi CMS as backend  
