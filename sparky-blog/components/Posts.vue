@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8">
+  <div class="mx-auto max-w-6xl py-8">
     <h3 class="font-medium text-2xl mb-4">Posts</h3>
     <div class="">
       <nuxt-link

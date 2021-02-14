@@ -1,14 +1,16 @@
 <template>
-  <div class="py-8">
+  <div class="max-w-6xl mx-auto py-8">
     <h3 class="font-medium text-2xl mb-4">Categories</h3>
-    <div class="flex flex-wrap">
-      <p
+    <div class="">
+      <nuxt-link
         v-for="category in categories"
-        :key="category.name"
-        class="mx-2 border border-gray-800 px-2 py-1"
+        :key="category.id"
+        :to="{ name: 'categories-id', params: { id: category.id } }"
+        tag="div"
+        class="cursor-pointer my-4 border border-gray-800 px-4 py-2"
       >
-        {{ category.name }}
-      </p>
+        <p class="text-xl font-medium my-2">{{ category.name }}</p>
+      </nuxt-link>
     </div>
   </div>
 </template>

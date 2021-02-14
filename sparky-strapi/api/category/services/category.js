@@ -7,6 +7,6 @@
 
 module.exports = {
     findOne(params, populate) {
-        return strapi.query('category').findOne({ name: params.id }, populate);
+        return strapi.query('category').findOne({ id: params.id }, populate);
     },
 };

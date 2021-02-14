@@ -1,8 +1,11 @@
 <template>
   <div>
     <Search :query="text" />
-    <div>
+    <div v-if="posts.length != 0">
       <Posts :posts="posts" />
+    </div>
+    <div v-else class="items-center flex">
+      <p class="mx-auto text-red-500 my-12">No result found</p>
     </div>
   </div>
 </template>
