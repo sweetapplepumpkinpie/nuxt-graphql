@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2 w-full">
+  <div class="mx-auto max-w-6xl py-2 w-full">
     <form @submit.prevent="excuteSearch">
       <input
         v-model="text"
