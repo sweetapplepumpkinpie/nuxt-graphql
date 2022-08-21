@@ -1,9 +1,4 @@
-# Sparky
-
-Ce project est une demonstration de la conception d'un blog avec Strapi et NuxtJs
-
 ## Configuration
-Strapi est configuré pour utiliser MonggoDB en tant que base de donnée
 
 ```js
 module.exports = ({ env }) => ({
